@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+        <nav>
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
+            <a href="{{ url_for('resume') }}">Resume</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="contact-section">
+            <h2>Get in Touch</h2>
+            <p>Email me directly at <a href="mailto:hiruygirmak@gmail.com">hiruygirmak@gmail.com</a></p>
+            <p>Alternatively, you can reach out to me on <a href="https://www.linkedin.com/in/hiruy-kassa-b17922297/" target="_blank">LinkedIn</a></p>
+            <p>Or check out my work on <a href="https://github.com/hiruykassa" target="_blank">GitHub</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Hiruy Kassa</p>
+    </footer>
+</body>
+</html>

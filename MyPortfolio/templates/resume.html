@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Resume</title>
+</head>
+<body>
+    <header>
+        <h1>My Resume</h1>
+        <nav>
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
+            <a href="{{ url_for('resume') }}">Resume</a>
+        </nav>
+    </header>
+    <div class="container">
+        <p>Click the link below to view or download my resume:</p>
+        <a href="{{ url_for('static', filename='resume.pdf') }}" target="_blank">Download Resume (PDF)</a>
+    </div>
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+</body>
+</html>

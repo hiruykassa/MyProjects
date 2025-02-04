@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flag Finder</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Flag Finder</h1>
+        <p>Find a flag by country name!</p>
+    </header>
+
+    <section id="search-section">
+        <form method="POST" action="/">
+            <input type="text" id="country-input" name="country" placeholder="Enter country name..." required>
+            <button type="submit" id="find-flag">Find Flag</button>
+        </form>
+    </section>
+
+    <section id="flag-section">
+        <h2>Flag:</h2>
+        {% if flag_url %}
+            <img id="flag" src="{{ flag_url }}" alt="Flag of {{ country }}" style="display:block;">
+        {% endif %}
+        {% if error %}
+            <p id="error-message" style="color: red;">{{ error }}</p>
+        {% endif %}
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Flag Finder Project</p>
+    </footer>
+</body>
+</html>

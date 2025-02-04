@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>About Me</title>
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+        <nav>
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
+            <a href="{{ url_for('resume') }}">Resume</a>
+        </nav>
+    </header>
+    <div class="container about">
+        <section>
+            <h2>Background</h2>
+            <p>I am a sophomore at St. Olaf College majoring in Quantitative Economics and Computer Science. I have a passion for problem-solving, coding, and making impactful contributions in tech and economics.</p>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming Languages: Python, C++, R</li>
+                <li>Web Development: HTML, CSS, Flask</li>
+                <li>Data Analysis & Visualization</li>
+                <li>Version Control: Git</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Goals</h2>
+            <p>My goal is to leverage my skills in technology and economics to solve real-world problems. I'm currently exploring internship opportunities to enhance my learning and contribute to impactful projects.</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Hiruy Kassa</p>
+    </footer>
+</body>
+</html>
