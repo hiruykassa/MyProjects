@@ -17,12 +17,27 @@ Welcome to **MyProjects**, a collection of various projects that I've worked on.
 - **Technologies used**: HTML, CSS, JavaScript
 - **How to use**: 
   1. Clone the repository.
-  2. Open the `index.html` file in a browser to view the portfolio.
+  2. Navigate to the `MyPortfolio` directory.
+  3. Run the project using Python
 
-*(Add more project details here as needed)*
+### BankAccount 
+- **Description**: A C++ project that allows users to create bank accounts and use other bank features.
+- **Technologies used**: C++
+- **How to use**: 
+  1. Clone the repository.
+  2. Navigate to the `BankAccount` directory.
+  3. Run the project using Python
 
+### SmallProjects 
+- **Description**: A bunch of small python projects.
+- **Technologies used**: Python
+- **How to use**: 
+  1. Clone the repository.
+  2. Navigate to the `SmallProjects` directory.
+  3. Navigate to the project you want to run.
+  4. Run the project using Python
+     
 ## How to Contribute
-
 Feel free to fork the repository and submit pull requests for any improvements. If you spot any issues, open an issue to let me know!
 
 
